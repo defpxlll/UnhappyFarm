@@ -112,19 +112,20 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   src: url(fonts/determinationmonorusbylyajk.otf);
   
 }
-.test{
-  font-family:"determination";
+.hide{
+  visibility:hidden;
 }
 .wrap{
   max-width:100%;
   max-height:100%;
+  aspect-ratio:1350 / 1080;
   position:relative;
 }
 
 .frm{
-  width:100%;
-  padding:0;
-  margin:0;
+  position:absolute;
+  top:0;
+  left:0;
   
 }
 .overlay{
@@ -147,6 +148,7 @@ img{
   top:50%;
   left:50%;
   translate: -50% -50%;
+  z-index:999;
 }
 #title, #menu, #ui-bar-tray {
 }
@@ -206,64 +208,74 @@ img{
 .frm0{
   translate:0 25%;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="frame0" tags="" position="100,400" size="100,100">@@#wrap;.wrap;
-	&lt;&lt;linkappend &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame0.gif&quot;&gt;&#39;&gt;&gt;
-    \&lt;img class=&quot;overlay&quot; src=media/overlay.png&gt;
- 	\&lt;div id=&quot;chc&quot; class =&quot;chc&quot;&gt;
+	 \&lt;img class=&quot;overlay hide&quot; src=media/overlay.png&gt;
+ 	\&lt;div id=&quot;chc&quot; class =&quot;chc hide&quot;&gt;
     	\&lt;img  src=&quot;media/choice0.png&quot;&gt;
         \&lt;div class=&quot;left&quot; data-passage=&quot;frame0&quot;&gt;&lt;/div&gt;
         \&lt;div class=&quot;right&quot; data-passage=&quot;frame1&quot;&gt;&lt;/div&gt;
     \&lt;/div&gt;\
-    &lt;&lt;/linkappend&gt;&gt;
+	&lt;&lt;link &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame0.gif&quot;&gt;&#39;&gt;&gt;
+   		\&lt;&lt;removeclass &quot;.overlay&quot; &quot;hide&quot;&gt;&gt;
+   		\&lt;&lt;removeclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
+    \&lt;&lt;/link&gt;&gt;
 @@</tw-passagedata><tw-passagedata pid="2" name="frame1" tags="" position="200,400" size="100,100">\&lt;&lt;set  _dlgdata to [&quot;...&quot;, &quot;Опять за полдень...&quot;,&quot;Чем заняться сегодня?&quot;]&gt;&gt;
 \&lt;&lt;set _i to 0&gt;&gt;
 \&lt;&lt;set _choicedata to [&quot;media/choice1.png&quot;,&quot;coffee&quot;,&quot;pc&quot;]&gt;&gt;
 \@@#wrap;.wrap;
 	\&lt;img id=&quot;frm&quot; class=&quot;frm&quot; src=media/frame1.jpg&gt;
+    \&lt;div data-passage=&quot;coffeehall&quot;&gt;
+    	\&lt;img  id=&quot;passl&quot; class=&quot;frm hide&quot; src=&quot;media/frame1.jpg&quot;&gt;
+    \&lt;/div&gt;
+    \&lt;div data-passage=&quot;pchall&quot;&gt;
+    	\&lt;img  id=&quot;passr&quot; class=&quot;frm hide&quot; src=&quot;media/frame1.jpg&quot;&gt;
+    \&lt;/div&gt;
     \&lt;img id=&quot;overlay&quot; class=&quot;overlay&quot; src=media/overlay.png&gt;
     \&lt;div id=&quot;dlg&quot; class=&quot;dlg&quot;&gt;
     	\&lt;img src=media/dialogbox.png&gt;
         \&lt;&lt;do&gt;&gt;
     		\&lt;&lt;type 40ms start 1ms id &quot;text&quot; class &quot;dlgtext&quot; none&gt;&gt;_dlgdata[_i]&lt;&lt;/type&gt;&gt;
         \&lt;&lt;/do&gt;&gt;
-    \&lt;/div&gt;
+   \&lt;/div&gt;
     \&lt;&lt;link &#39;&lt;div id=&quot;dlgiter&quot; class=&quot;dlgiter&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
     	\&lt;&lt;if _i+1 lt _dlgdata.length&gt;&gt;
         	\&lt;&lt;set _i+=1&gt;&gt;
             \&lt;&lt;redo&gt;&gt;
         \&lt;&lt;else&gt;&gt;
-        	\&lt;&lt;remove &quot;#dlg&quot;&gt;&gt;
-            \&lt;&lt;remove &quot;#dlgiter&quot;&gt;&gt;
-           	\&lt;&lt;append &quot;#wrap&quot;&gt;&gt;
-            	\&lt;div id=&quot;chc&quot; class =&quot;chc&quot;&gt;
-    				\&lt;img  src=&quot;media/choice1.png&quot;&gt;
-       				 \&lt;&lt;link &#39;&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
-                     	\&lt;&lt;remove &quot;#chc&quot;&gt;&gt;
-                        \&lt;&lt;remove &quot;#overlay&quot;&gt;&gt;
-                        \&lt;&lt;remove &quot;#frm&quot;&gt;&gt;
-                        \&lt;&lt;append &quot;#wrap&quot;&gt;&gt;
-                        	\&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame2.jpg&quot;&gt;&#39;&gt;&gt;
-                            	\&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame3.jpg&quot;&gt;&#39;&gt;&gt;
-                            		\[img[media/frame1.jpg][coffeehall]]
-                           		 \&lt;&lt;/linkreplace&gt;&gt;	
-                            \&lt;&lt;/linkreplace&gt;&gt;
-                        \&lt;&lt;/append&gt;&gt;
-                     \&lt;&lt;/link&gt;&gt;
-      				 \&lt;&lt;link &#39;&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
-                     	\&lt;&lt;remove &quot;#chc&quot;&gt;&gt;
-                        \&lt;&lt;remove &quot;#overlay&quot;&gt;&gt;
-                        \&lt;&lt;remove &quot;#frm&quot;&gt;&gt;
-                        \&lt;&lt;append &quot;#wrap&quot;&gt;&gt;
-                        	\&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame2.jpg&quot;&gt;&#39;&gt;&gt;
-                            	\&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm&quot; src=&quot;media/frame3.jpg&quot;&gt;&#39;&gt;&gt;
-                            		\[img[media/frame1.jpg][pchall]]
-                           		 \&lt;&lt;/linkreplace&gt;&gt;	
-                            \&lt;&lt;/linkreplace&gt;&gt;
-                       \&lt;&lt;/append&gt;&gt;
-                    \&lt;&lt;/link&gt;&gt;
-                \&lt;/div&gt;
-            \&lt;&lt;/append&gt;&gt;
+        	\&lt;&lt;addclass &quot;#dlg&quot; &quot;hide&quot;&gt;&gt;
+            \&lt;&lt;addclass &quot;#dlgiter&quot; &quot;hide&quot;&gt;&gt;
+          	\&lt;&lt;removeclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
         \&lt;&lt;/if&gt;&gt;
     \&lt;&lt;/link&gt;&gt;
+    \&lt;&lt;link &#39;&lt;img id=&quot;frame2&quot; class=&quot;frm hide&quot; src=&quot;media/frame2.jpg&quot;&gt;&#39;&gt;&gt;
+    	\&lt;&lt;removeclass &quot;#frame3&quot; &quot;hide&quot;&gt;&gt;
+        \&lt;&lt;addclass &quot;#frame2&quot; &quot;hide&quot;&gt;&gt;
+    \&lt;&lt;/link&gt;&gt;
+    \&lt;&lt;link &#39;&lt;img id=&quot;frame3&quot; class=&quot;frm hide&quot; src=&quot;media/frame3.jpg&quot;&gt;&#39;&gt;&gt;
+    	\&lt;&lt;if _t is 1&gt;&gt;
+        	\&lt;&lt;removeclass &quot;#passl&quot; &quot;hide&quot;&gt;&gt;
+            \&lt;&lt;addclass &quot;#frame3&quot; &quot;hide&quot;&gt;&gt;
+       \&lt;&lt;else&gt;&gt;
+       		\&lt;&lt;removeclass &quot;#passr&quot; &quot;hide&quot;&gt;&gt;
+    		\&lt;&lt;addclass &quot;#frame3&quot; &quot;hide&quot;&gt;&gt;
+      \&lt;&lt;/if&gt;&gt;
+     \&lt;&lt;/link&gt;&gt;
+    \&lt;div id=&quot;chc&quot; class =&quot;chc hide&quot;&gt;
+    	\&lt;img  src=&quot;media/choice1.png&quot;&gt;
+        \&lt;&lt;link &#39;&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
+        	&lt;&lt;set _t to 1&gt;&gt;
+			\&lt;&lt;addclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
+			\&lt;&lt;addclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+            \&lt;&lt;removeclass &quot;#frame2&quot; &quot;hide&quot;&gt;&gt;
+			\&lt;&lt;addclass &quot;#frm&quot; &quot;hide&quot;&gt;&gt;
+      	\&lt;&lt;/link&gt;&gt;
+         \&lt;&lt;link &#39;&lt;div class=&quot;right&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
+         	\&lt;&lt;set _t to 0&gt;&gt;
+        	 \&lt;&lt;addclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
+             \&lt;&lt;addclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+             \&lt;&lt;removeclass &quot;#frame2&quot; &quot;hide&quot;&gt;&gt;
+             \&lt;&lt;addclass &quot;#frm&quot; &quot;hide&quot;&gt;&gt;
+         \&lt;&lt;/link&gt;&gt;
+    \&lt;/div&gt;
 \@@</tw-passagedata><tw-passagedata pid="3" name="coffeehall" tags="" position="300,300" size="100,100">@@#wrap;.wrap;
     \&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm0&quot; src=&quot;media/hall0.jpg&quot;&gt;&#39;&gt;&gt;
     	\&lt;&lt;linkreplace &#39;&lt;img class=&quot;frm0&quot; src=&quot;media/hall1.jpg&quot;&gt;&#39;&gt;&gt;
