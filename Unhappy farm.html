@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Unhappy farm" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="12B8A8C2-4F8C-42C8-9F6B-BC14DED3AA73" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#passages{
+	<tw-storydata name="Unhappy farm" startnode="8" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="12B8A8C2-4F8C-42C8-9F6B-BC14DED3AA73" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#passages{
   max-width:69em;
 }
 @font-face{
@@ -225,15 +225,7 @@ img{
   left:68%;
   bottom:12%;
   z-index:99;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">(function () {
-  var images= [];
-	var preload =	["choice0.png","choice1.png","coffeehall.png","cup1.png","cup2.png","cup3.png","cup4.png","cup5.png","cup6.png","cup7.png","desktop0.png","desktop1.png","desktop2.png","dialogbox.png","drinkcoffee.png","emptycup.png","frame0.gif","frame1.jpg","frame2.jpg","frame3.jpg","game.png","gamestart.png","hall0.jpg","hall1.jpg","hall2.jpg","hall3.jpg","hall4.jpg","kitchen0.png","kitchen1.png","load.gif","makecoffee.png","mix.png","overlay.png","pc.gif","pc0.png","pc1.png","pc2.png","pchall.jpg","workgame.png"];
-	images = preload.map(function (url) {
-		var image = document.createElement('img');
-		image.src = url;
-		return image;
-	});
-})();</script><tw-passagedata pid="1" name="frame0" tags="" position="200,400" size="100,100">\@@#wrap;.wrap;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="frame0" tags="" position="200,400" size="100,100">\@@#wrap;.wrap;
  	\&lt;div id=&quot;chc&quot; class =&quot;chc hide&quot;&gt;
     	\&lt;img  src=&quot;media/choice0.png&quot;&gt;
         \&lt;&lt;link &#39;&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
@@ -513,19 +505,19 @@ img{
        \&lt;&lt;/link&gt;&gt;
    &lt;/div&gt;
     \&lt;a data-passage=&quot;videogame&quot;&gt;&lt;img id=&quot;ldng&quot; class=&quot;frm hide&quot; src=media/load.gif&gt;&lt;/a&gt;
-@@</tw-passagedata><tw-passagedata pid="8" name="load" tags="" position="100,500" size="100,100">&lt;div id=&quot;xd&quot;&gt;&lt;/div&gt;\
-&lt;&lt;done&gt;&gt;
-&lt;&lt;script&gt;&gt;
-	let lockID= LoadScreen.lock();
-    var xd = document.getElementById(&quot;xd&quot;);
-	var preload =	[&quot;choice0.png&quot;,&quot;choice1.png&quot;,&quot;coffeehall.png&quot;,&quot;cup1.png&quot;,&quot;cup2.png&quot;,&quot;cup3.png&quot;,&quot;cup4.png&quot;,&quot;cup5.png&quot;,&quot;cup6.png&quot;,&quot;cup7.png&quot;,&quot;desktop0.png&quot;,&quot;desktop1.png&quot;,&quot;desktop2.png&quot;,&quot;dialogbox.png&quot;,&quot;drinkcoffee.png&quot;,&quot;emptycup.png&quot;,&quot;frame0.gif&quot;,&quot;frame1.jpg&quot;,&quot;frame2.jpg&quot;,&quot;frame3.jpg&quot;,&quot;game.png&quot;,&quot;gamestart.png&quot;,&quot;hall0.jpg&quot;,&quot;hall1.jpg&quot;,&quot;hall2.jpg&quot;,&quot;hall3.jpg&quot;,&quot;hall4.jpg&quot;,&quot;kitchen0.png&quot;,&quot;kitchen1.png&quot;,&quot;load.gif&quot;,&quot;makecoffee.png&quot;,&quot;mix.png&quot;,&quot;overlay.png&quot;,&quot;pc.gif&quot;,&quot;pc0.png&quot;,&quot;pc1.png&quot;,&quot;pc2.png&quot;,&quot;pchall.jpg&quot;,&quot;workgame.png&quot;];
-     for (var i = 0; i &lt; preload.length; i++) {
-        var t = document.createElement(&quot;img&quot;);
-        t.src = &quot;media/&quot; + preload[i];
-        xd.appendChild(t);
+@@</tw-passagedata><tw-passagedata pid="8" name="loading" tags="" position="100,400" size="100,100">&lt;&lt;script&gt;&gt;
+	var lockID= LoadScreen.lock();
+    var images = [];
+    var preload =	[&quot;choice0.png&quot;,&quot;choice1.png&quot;,&quot;coffeehall.png&quot;,&quot;cup1.png&quot;,&quot;cup2.png&quot;,&quot;cup3.png&quot;,&quot;cup4.png&quot;,&quot;cup5.png&quot;,&quot;cup6.png&quot;,&quot;cup7.png&quot;,&quot;desktop0.png&quot;,&quot;desktop1.png&quot;,&quot;desktop2.png&quot;,&quot;dialogbox.png&quot;,&quot;drinkcoffee.png&quot;,&quot;emptycup.png&quot;,&quot;frame0.gif&quot;,&quot;frame1.jpg&quot;,&quot;frame2.jpg&quot;,&quot;frame3.jpg&quot;,&quot;game.png&quot;,&quot;gamestart.png&quot;,&quot;hall0.jpg&quot;,&quot;hall1.jpg&quot;,&quot;hall2.jpg&quot;,&quot;hall3.jpg&quot;,&quot;hall4.jpg&quot;,&quot;kitchen0.png&quot;,&quot;kitchen1.png&quot;,&quot;load.gif&quot;,&quot;makecoffee.png&quot;,&quot;mix.png&quot;,&quot;overlay.png&quot;,&quot;pc.gif&quot;,&quot;pc0.png&quot;,&quot;pc1.png&quot;,&quot;pc2.png&quot;,&quot;pchall.jpg&quot;,&quot;workgame.png&quot;];
+    for (var i = 0; i &lt; preload.length; i++) {
+        images[i] = new Image();
+        images[i].src = &quot;media/&quot; + preload[i];
+        console.log(images[i]);
     }
     LoadScreen.unlock(lockID);
 &lt;&lt;/script&gt;&gt;
+&lt;&lt;done&gt;&gt;
+	&lt;&lt;goto &quot;frame0&quot;&gt;&gt;
 &lt;&lt;/done&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
