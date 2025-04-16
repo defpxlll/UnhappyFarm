@@ -508,11 +508,12 @@ img{
 @@</tw-passagedata><tw-passagedata pid="8" name="load" tags="" position="100,400" size="100,100">&lt;&lt;script&gt;&gt;
 	var lockID= LoadScreen.lock();
     var images = [];
-    let preload =	[&quot;choice0.png&quot;,&quot;choice1.png&quot;,&quot;coffeehall.png&quot;,&quot;cup1.png&quot;,&quot;cup2.png&quot;,&quot;cup3.png&quot;,&quot;cup4.png&quot;,&quot;cup5.png&quot;,&quot;cup6.png&quot;,&quot;cup7.png&quot;,&quot;desktop0.png&quot;,&quot;desktop1.png&quot;,&quot;desktop2.png&quot;,&quot;dialogbox.png&quot;,&quot;drinkcoffee.png&quot;,&quot;emptycup.png&quot;,&quot;frame0.gif&quot;,&quot;frame1.jpg&quot;,&quot;frame2.jpg&quot;,&quot;frame3.jpg&quot;,&quot;game.png&quot;,&quot;gamestart.png&quot;,&quot;hall0.jpg&quot;,&quot;hall1.jpg&quot;,&quot;hall2.jpg&quot;,&quot;hall3.jpg&quot;,&quot;hall4.jpg&quot;,&quot;kitchen0.png&quot;,&quot;kitchen1.png&quot;,&quot;load.gif&quot;,&quot;makecoffee.png&quot;,&quot;mix.png&quot;,&quot;overlay.png&quot;,&quot;pc.gif&quot;,&quot;pc0.png&quot;,&quot;pc1.png&quot;,&quot;pc2.png&quot;,&quot;pchall.jpg&quot;,&quot;workgame.png&quot;];
-    for (var i = 0; i &lt; preload.length; i++) {
-        images[i] = new Image();
-        images[i].src = &quot;media/&quot; + preload[i];
-    }
+    var preload =	[&quot;choice0.png&quot;,&quot;choice1.png&quot;,&quot;coffeehall.png&quot;,&quot;cup1.png&quot;,&quot;cup2.png&quot;,&quot;cup3.png&quot;,&quot;cup4.png&quot;,&quot;cup5.png&quot;,&quot;cup6.png&quot;,&quot;cup7.png&quot;,&quot;desktop0.png&quot;,&quot;desktop1.png&quot;,&quot;desktop2.png&quot;,&quot;dialogbox.png&quot;,&quot;drinkcoffee.png&quot;,&quot;emptycup.png&quot;,&quot;frame0.gif&quot;,&quot;frame1.jpg&quot;,&quot;frame2.jpg&quot;,&quot;frame3.jpg&quot;,&quot;game.png&quot;,&quot;gamestart.png&quot;,&quot;hall0.jpg&quot;,&quot;hall1.jpg&quot;,&quot;hall2.jpg&quot;,&quot;hall3.jpg&quot;,&quot;hall4.jpg&quot;,&quot;kitchen0.png&quot;,&quot;kitchen1.png&quot;,&quot;load.gif&quot;,&quot;makecoffee.png&quot;,&quot;mix.png&quot;,&quot;overlay.png&quot;,&quot;pc.gif&quot;,&quot;pc0.png&quot;,&quot;pc1.png&quot;,&quot;pc2.png&quot;,&quot;pchall.jpg&quot;,&quot;workgame.png&quot;];
+    window._ImageCache = preload.map(function (url) {
+		var image = document.createElement(&#39;img&#39;);
+		image.src = url;
+		return image;
+	});
     LoadScreen.unlock(lockID);
 &lt;&lt;/script&gt;&gt;
 &lt;&lt;goto &quot;frame0&quot;&gt;&gt;</tw-passagedata></tw-storydata>
