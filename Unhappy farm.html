@@ -514,7 +514,7 @@ img{
 	 for (var i = 0; i &lt; preload.length; i++) {
         imgs[i] = document.createElement(&quot;img&quot;);
         imgs.src = &quot;media/&quot; + preload[i];
-        xd.appendChild(t);
+        xd.appendChild(imgs[i]);
     }
     LoadScreen.unlock(lockID);
     Engine.play(&quot;frame0&quot;);
