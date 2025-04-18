@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>Unhappy farm</title>
-<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=0" />
 <meta name="application-name" content="SugarCube" />
 <meta name="version" content="2.37.3" />
 <!--
@@ -105,7 +105,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="Unhappy farm" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="12B8A8C2-4F8C-42C8-9F6B-BC14DED3AA73" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#passages{
-  max-width:69em;
+  max-width:60em;
 }
 @font-face{
   font-family:determination;
@@ -533,7 +533,7 @@ img{
           	&lt;&lt;addclass &quot;#chc0&quot; &quot;hide&quot;&gt;&gt;
             &lt;&lt;removeclass &quot;#pc&quot; &quot;hide&quot;&gt;&gt;
           &lt;&lt;/link&gt;&gt;
-     \&lt;/div&gt;&gt;
+     \&lt;/div&gt;
      \&lt;&lt;link &#39;&lt;div id=&quot;dlgiter&quot; class=&quot;dlgiter hide&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
      	&lt;&lt;addclass &quot;#dlg&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;removeclass &quot;#chc0&quot; &quot;hide&quot;&gt;&gt;
@@ -545,7 +545,7 @@ img{
    \&lt;&lt;link &#39;&lt;img id=&quot;d0&quot; class=&quot;sqr hide&quot; src=&quot;media/desktop0.png&quot;&gt;&#39;&gt;&gt;
    		&lt;&lt;removeclass &quot;#d1&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#d0&quot; &quot;hide&quot;&gt;&gt;
-   \&lt;&lt;/link&gt;&gt;&gt;
+   \&lt;&lt;/link&gt;&gt;
    \&lt;&lt;link &#39;&lt;img id=&quot;d1&quot; class=&quot;sqr hide&quot; src=&quot;media/desktop1.png&quot;&gt;&#39;&gt;&gt;
    		&lt;&lt;removeclass &quot;#d2&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#d1&quot; &quot;hide&quot;&gt;&gt;
@@ -553,17 +553,65 @@ img{
    \&lt;&lt;link &#39;&lt;img id=&quot;d2&quot; class=&quot;sqr hide&quot; src=&quot;media/desktop2.png&quot;&gt;&#39;&gt;&gt;
    	&lt;&lt;removeclass &quot;#gs&quot; &quot;hide&quot;&gt;&gt;
    &lt;&lt;/link&gt;&gt;
-  &lt;div id=&quot;gs&quot; class=&quot;chc hide&quot;&gt;
- 	&lt;img src=&quot;media/gamestart.png&quot;&gt;&#39;&gt;&gt;
+  \&lt;div id=&quot;gs&quot; class=&quot;chc hide&quot;&gt;
+ 	\&lt;img src=&quot;media/gamestart.png&quot;&gt;&#39;&gt;&gt;
       \&lt;&lt;link &#39;&lt;div class=&quot;ok&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
         	\&lt;&lt;addclass &quot;#gs&quot; &quot;hide&quot;&gt;&gt;
             \&lt;&lt;addclass &quot;#d2&quot; &quot;hide&quot;&gt;&gt;
-        	\&lt;&lt;removeclass &quot;#ldng&quot; &quot;hide&quot;&gt;&gt;
+        	\&lt;&lt;removeclass &quot;#load0&quot; &quot;hide&quot;&gt;&gt;
             \&lt;&lt;addclass &quot;#2&quot; &quot;hide&quot;&gt;&gt;
        \&lt;&lt;/link&gt;&gt;
    &lt;/div&gt;
-    \&lt;a data-passage=&quot;videogame&quot;&gt;&lt;img id=&quot;ldng&quot; class=&quot;frm hide&quot; src=media/load.gif&gt;&lt;/a&gt;
-@@</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="0,400" size="100,100">&lt;&lt;set _preload to	[&quot;media/choice0.png&quot;,&quot;media/choice1.png&quot;,&quot;media/coffeehall.png&quot;,&quot;media/cup1.png&quot;,&quot;media/cup2.png&quot;,&quot;media/cup3.png&quot;,&quot;media/cup4.png&quot;,&quot;media/cup5.png&quot;,&quot;media/cup6.png&quot;,&quot;media/cup7.png&quot;,&quot;media/desktop0.png&quot;,&quot;media/desktop1.png&quot;,&quot;media/desktop2.png&quot;,&quot;media/dialogbox.png&quot;,&quot;media/drinkcoffee.png&quot;,&quot;media/emptycup.png&quot;,&quot;media/frame0.gif&quot;,&quot;media/frame1.jpg&quot;,&quot;media/frame2.jpg&quot;,&quot;media/frame3.jpg&quot;,&quot;media/game.png&quot;,&quot;media/gamestart.png&quot;,&quot;media/hall0.jpg&quot;,&quot;media/hall1.jpg&quot;,&quot;media/hall2.jpg&quot;,&quot;media/hall3.jpg&quot;,&quot;media/hall4.jpg&quot;,&quot;media/kitchen0.png&quot;,&quot;media/kitchen1.png&quot;,&quot;media/load.gif&quot;,&quot;media/makecoffee.png&quot;,&quot;media/mix.png&quot;,&quot;media/overlay.png&quot;,&quot;media/pc.gif&quot;,&quot;media/pc0.png&quot;,&quot;media/pc1.png&quot;,&quot;media/pc2.png&quot;,&quot;media/pchall.jpg&quot;,&quot;media/workgame.png&quot;]&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load0&quot; class=&quot;frm hide&quot; src=media/load0.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load1&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load0&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load1&quot; class=&quot;frm hide&quot; src=media/load1.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load2&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load1&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load2&quot; class=&quot;frm hide&quot; src=media/load2.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load3&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;&lt;addclass &quot;#load2&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load3&quot; class=&quot;frm hide&quot; src=media/load3.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load4&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load3&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load4&quot; class=&quot;frm hide&quot; src=media/load4.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load5&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load4&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+  \ &lt;&lt;link &#39;&lt;img id=&quot;load5&quot; class=&quot;frm hide&quot; src=media/load5.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load6&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load5&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load6&quot; class=&quot;frm hide&quot; src=media/load6.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load7&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load6&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load7&quot; class=&quot;frm hide&quot; src=media/load7.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load8&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load7&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load8&quot; class=&quot;frm hide&quot; src=media/load8.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load9&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load8&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load9&quot; class=&quot;frm hide&quot; src=media/load9.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load10&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load9&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load10&quot; class=&quot;frm hide&quot; src=media/load10.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load11&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load10&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+   \&lt;&lt;link &#39;&lt;img id=&quot;load11&quot; class=&quot;frm hide&quot; src=media/load11.png&gt;&#39;&gt;&gt;
+   		&lt;&lt;removeclass &quot;#load12&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#load11&quot; &quot;hide&quot;&gt;&gt;
+   &lt;&lt;/link&gt;&gt;
+    \&lt;a data-passage=&quot;videogame&quot;&gt;&lt;img id=&quot;load12&quot; class=&quot;frm hide&quot; src=media/load12.png&gt;&lt;/a&gt;
+@@</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="0,400" size="100,100">&lt;&lt;set _preload to	[&quot;media/choice0.png&quot;,&quot;media/choice1.png&quot;,&quot;media/coffeehall.png&quot;,&quot;media/cup1.png&quot;,&quot;media/cup2.png&quot;,&quot;media/cup3.png&quot;,&quot;media/cup4.png&quot;,&quot;media/cup5.png&quot;,&quot;media/cup6.png&quot;,&quot;media/cup7.png&quot;,&quot;media/desktop0.png&quot;,&quot;media/desktop1.png&quot;,&quot;media/desktop2.png&quot;,&quot;media/dialogbox.png&quot;,&quot;media/drinkcoffee.png&quot;,&quot;media/emptycup.png&quot;,&quot;media/frame0.gif&quot;,&quot;media/frame1.jpg&quot;,&quot;media/frame2.jpg&quot;,&quot;media/frame3.jpg&quot;,&quot;media/game.png&quot;,&quot;media/gamestart.png&quot;,&quot;media/hall0.jpg&quot;,&quot;media/hall1.jpg&quot;,&quot;media/hall2.jpg&quot;,&quot;media/hall3.jpg&quot;,&quot;media/hall4.jpg&quot;,&quot;media/kitchen0.png&quot;,&quot;media/kitchen1.png&quot;,&quot;media/makecoffee.png&quot;,&quot;media/mix.png&quot;,&quot;media/overlay.png&quot;,&quot;media/pc.gif&quot;,&quot;media/pc0.png&quot;,&quot;media/pc1.png&quot;,&quot;media/pc2.png&quot;,&quot;media/pchall.jpg&quot;,&quot;media/workgame.png&quot;,&quot;media/load0.png&quot;,&quot;media/load1.png&quot;,&quot;media/load2.png&quot;,&quot;media/load3.png&quot;,&quot;media/load4.png&quot;,&quot;media/load5.png&quot;,&quot;media/load6.png&quot;,&quot;media/load7.png&quot;,&quot;media/load8.png&quot;,&quot;media/load9.png&quot;,&quot;media/load10.png&quot;,&quot;media/load11.png&quot;,&quot;media/load12.png&quot;]&gt;&gt;
 &lt;&lt;preload _preload&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
