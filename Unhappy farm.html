@@ -238,6 +238,13 @@ img{
 #start{
   top:21%;
   right:1%;
+}
+.actionbutton{
+  width:50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  translate:-50% -50%;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">(function () {
     'use strict';
     // v1.1.0
@@ -630,7 +637,7 @@ img{
         &lt;&lt;addclass &quot;#load11&quot; &quot;hide&quot;&gt;&gt;
    &lt;&lt;/link&gt;&gt;
     \&lt;a data-passage=&quot;videogame&quot;&gt;&lt;img id=&quot;load12&quot; class=&quot;frm hide&quot; src=media/load12.png&gt;&lt;/a&gt;
-@@</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="25,400" size="100,100">&lt;&lt;set _preload to	[&quot;media/choice0.png&quot;,&quot;media/choice1.png&quot;,&quot;media/coffeehall.png&quot;,&quot;media/cup1.png&quot;,&quot;media/cup2.png&quot;,&quot;media/cup3.png&quot;,&quot;media/cup4.png&quot;,&quot;media/cup5.png&quot;,&quot;media/cup6.png&quot;,&quot;media/cup7.png&quot;,&quot;media/desktop0.png&quot;,&quot;media/desktop1.png&quot;,&quot;media/desktop2.png&quot;,&quot;media/dialogbox.png&quot;,&quot;media/drinkcoffee.png&quot;,&quot;media/emptycup.png&quot;,&quot;media/frame0.gif&quot;,&quot;media/frame1.jpg&quot;,&quot;media/frame2.jpg&quot;,&quot;media/frame3.jpg&quot;,&quot;media/game.png&quot;,&quot;media/gamestart.png&quot;,&quot;media/hall0.jpg&quot;,&quot;media/hall1.jpg&quot;,&quot;media/hall2.jpg&quot;,&quot;media/hall3.jpg&quot;,&quot;media/hall4.jpg&quot;,&quot;media/kitchen0.png&quot;,&quot;media/kitchen1.png&quot;,&quot;media/makecoffee.png&quot;,&quot;media/mix.png&quot;,&quot;media/overlay.png&quot;,&quot;media/pc.gif&quot;,&quot;media/pc0.png&quot;,&quot;media/pc1.png&quot;,&quot;media/pc2.png&quot;,&quot;media/pchall.jpg&quot;,&quot;media/workgame.png&quot;,&quot;media/load0.png&quot;,&quot;media/load1.png&quot;,&quot;media/load2.png&quot;,&quot;media/load3.png&quot;,&quot;media/load4.png&quot;,&quot;media/load5.png&quot;,&quot;media/load6.png&quot;,&quot;media/load7.png&quot;,&quot;media/load8.png&quot;,&quot;media/load9.png&quot;,&quot;media/load10.png&quot;,&quot;media/load11.png&quot;,&quot;media/load12.png&quot;,&quot;media/carrot.png&quot;,&quot;media/chicken0.png&quot;,&quot;media/chicken1.png&quot;,&quot;media/chicken2.gif&quot;,&quot;media/farm0.png&quot;,&quot;media/farm1.png&quot;,&quot;media/farm2.png&quot;,&quot;media/farm3.png&quot;,&quot;media/kickpet.png&quot;,&quot;media/pot0.png&quot;,&quot;media/pot1.png&quot;,&quot;media/seed0.png&quot;,&quot;media/seed1.png&quot;,&quot;media/seed2.png&quot;,&quot;media/seed3.png&quot;,&quot;media/seed4.png&quot;]&gt;&gt;
+@@</tw-passagedata><tw-passagedata pid="8" name="StoryInit" tags="" position="25,400" size="100,100">&lt;&lt;set _preload to	[&quot;media/choice0.png&quot;,&quot;media/choice1.png&quot;,&quot;media/coffeehall.png&quot;,&quot;media/cup1.png&quot;,&quot;media/cup2.png&quot;,&quot;media/cup3.png&quot;,&quot;media/cup4.png&quot;,&quot;media/cup5.png&quot;,&quot;media/cup6.png&quot;,&quot;media/cup7.png&quot;,&quot;media/desktop0.png&quot;,&quot;media/desktop1.png&quot;,&quot;media/desktop2.png&quot;,&quot;media/dialogbox.png&quot;,&quot;media/drinkcoffee.png&quot;,&quot;media/emptycup.png&quot;,&quot;media/frame0.gif&quot;,&quot;media/frame1.jpg&quot;,&quot;media/frame2.jpg&quot;,&quot;media/frame3.jpg&quot;,&quot;media/game.png&quot;,&quot;media/gamestart.png&quot;,&quot;media/hall0.jpg&quot;,&quot;media/hall1.jpg&quot;,&quot;media/hall2.jpg&quot;,&quot;media/hall3.jpg&quot;,&quot;media/hall4.jpg&quot;,&quot;media/kitchen0.png&quot;,&quot;media/kitchen1.png&quot;,&quot;media/makecoffee.png&quot;,&quot;media/mix.png&quot;,&quot;media/overlay.png&quot;,&quot;media/pc.gif&quot;,&quot;media/pc0.png&quot;,&quot;media/pc1.png&quot;,&quot;media/pc2.png&quot;,&quot;media/pchall.jpg&quot;,&quot;media/workgame.png&quot;,&quot;media/load0.png&quot;,&quot;media/load1.png&quot;,&quot;media/load2.png&quot;,&quot;media/load3.png&quot;,&quot;media/load4.png&quot;,&quot;media/load5.png&quot;,&quot;media/load6.png&quot;,&quot;media/load7.png&quot;,&quot;media/load8.png&quot;,&quot;media/load9.png&quot;,&quot;media/load10.png&quot;,&quot;media/load11.png&quot;,&quot;media/load12.png&quot;,&quot;media/carrot.png&quot;,&quot;media/chicken0.png&quot;,&quot;media/chicken1.png&quot;,&quot;media/chicken2.gif&quot;,&quot;media/farm0.png&quot;,&quot;media/farm1.png&quot;,&quot;media/farm2.png&quot;,&quot;media/farm3.png&quot;,&quot;media/kickpet.png&quot;,&quot;media/pot0.png&quot;,&quot;media/pot1.png&quot;,&quot;media/seed0.png&quot;,&quot;media/seed1.png&quot;,&quot;media/seed2.png&quot;,&quot;media/seed3.png&quot;,&quot;media/seed4.png&quot;,&quot;media/plantseeds.png&quot;,&quot;media/takeseeds.png&quot;,&quot;media/watercrop.png&quot;]&gt;&gt;
 &lt;&lt;preload _preload&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="videogame" tags="" position="800,400" size="100,100">@@#wrap;.wrap;
 	\&lt;img id=&quot;farm0&quot; class=&quot;frm&quot; src=&quot;media/farm0.png&quot;&gt;
     \&lt;&lt;link &#39;&lt;div id=&quot;quit&quot; class=&quot;gamebutton&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
@@ -644,8 +651,9 @@ img{
     \&lt;&lt;link &#39;&lt;div id=&quot;start&quot; class=&quot;gamebutton&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
     	&lt;&lt;removeclass &quot;#farm1&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#farm0&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#quit&quot; &quot;hide&quot;&gt;&gt;
+       	&lt;&lt;addclass &quot;#start&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
-     \&lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=media/overlay.png&gt;
      \&lt;div id=&quot;dlg&quot; class=&quot;dlg hide&quot;&gt;
     	\&lt;img src=media/dialogbox.png&gt;
    	\&lt;/div&gt;
@@ -658,18 +666,33 @@ img{
        &lt;&lt;removeclass &quot;#start&quot; &quot;hide&quot;&gt;&gt;
     \&lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;farm1&quot; class=&quot;frm hide&quot; src=&quot;media/farm1.png&quot;&gt;&#39;&gt;&gt;
-    	&lt;&lt;removeclass &quot;#carrot&quot; &quot;hide&quot;&gt;&gt;
+    	&lt;&lt;removeclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+    	&lt;&lt;removeclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;farm2&quot; class=&quot;frm hide&quot; src=&quot;media/farm2.png&quot;&gt;&#39;&gt;&gt;
-    	&lt;&lt;removeclass &quot;#seed0&quot; &quot;hide&quot;&gt;&gt;
+    	&lt;&lt;removeclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+    	&lt;&lt;removeclass &quot;#wcrops&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;farm3&quot; class=&quot;frm hide&quot; src=&quot;media/farm3.png&quot;&gt;&#39;&gt;&gt;
-    	&lt;&lt;removeclass &quot;#pot0&quot; &quot;hide&quot;&gt;&gt;
+    &lt;&lt;/link&gt;&gt;
+    \&lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=media/overlay.png&gt;
+    \&lt;&lt;link &#39;&lt;img style=&quot;cursor:pointer;&quot; id=&quot;tseeds&quot; class=&quot;actionbutton hide&quot; src=&quot;media/takeseeds.png&quot;&gt;&#39;&gt;&gt;
+        &lt;&lt;addclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#carrot&quot; &quot;hide&quot;&gt;&gt;
+    &lt;&lt;/link&gt;&gt;
+    \&lt;&lt;link &#39;&lt;img style=&quot;cursor:pointer;&quot; id=&quot;pseeds&quot; class=&quot;actionbutton hide&quot; src=&quot;media/plantseeds.png&quot;&gt;&#39;&gt;&gt;
+        &lt;&lt;addclass &quot;#pseeds&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#seed0&quot; &quot;hide&quot;&gt;&gt;
+    &lt;&lt;/link&gt;&gt;
+    \&lt;&lt;link &#39;&lt;img style=&quot;cursor:pointer;&quot; id=&quot;wcrops&quot; class=&quot;actionbutton hide&quot; src=&quot;media/watercrops.png&quot;&gt;&#39;&gt;&gt;
+    	&lt;&lt;addclass &quot;#wcrops&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#pot0&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;carrot&quot; class=&quot;sqr hide&quot; src=&quot;media/carrot.png&quot;&gt;&#39;&gt;&gt;
-    	&lt;&lt;addclass &quot;#carrot&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;removeclass &quot;#farm2&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;addclass &quot;#farm1&quot; &quot;hide&quot;&gt;&gt;
+      	&lt;&lt;addclass &quot;#carrot&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+    	&lt;&lt;removeclass &quot;#pseeds&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;seed0&quot; class=&quot;sqr hide&quot; src=&quot;media/seed0.png&quot;&gt;&#39;&gt;&gt;
     	&lt;&lt;removeclass &quot;#seed1&quot; &quot;hide&quot;&gt;&gt;
@@ -688,24 +711,27 @@ img{
         &lt;&lt;addclass &quot;#seed3&quot; &quot;hide&quot;&gt;&gt; 
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;seed4&quot; class=&quot;sqr hide&quot; src=&quot;media/seed4.png&quot;&gt;&#39;&gt;&gt;
-        &lt;&lt;addclass &quot;#seed4&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;addclass &quot;#seed0&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;removeclass &quot;#farm3&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;addclass &quot;#farm2&quot; &quot;hide&quot;&gt;&gt;
+     	&lt;&lt;addclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#seed4&quot; &quot;hide&quot;&gt;&gt;&gt;
+       	&lt;&lt;addclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#farm2&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#farm1&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;pot0&quot; class=&quot;sqr hide&quot; src=&quot;media/pot0.png&quot;&gt;&#39;&gt;&gt;
     	&lt;&lt;removeclass &quot;#pot1&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#pot0&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;pot1&quot; class=&quot;sqr hide&quot; src=&quot;media/pot1.png&quot;&gt;&#39;&gt;&gt;
-    	&lt;&lt;addclass &quot;#pot0&quot; &quot;hide&quot;&gt;&gt;
+     	&lt;&lt;addclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#pot1&quot; &quot;hide&quot;&gt;&gt;
-        &lt;&lt;removeclass &quot;#chck0&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;removeclass &quot;#farm3&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#farm2&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;&lt;link &#39;&lt;img id=&quot;chck0&quot; class=&quot;sqr hide&quot; src=&quot;media/chicken0.png&quot;&gt;&#39;&gt;&gt;
     	&lt;&lt;removeclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
-    &lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=&quot;media/overlay.png&quot;&gt;
+    \&lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=&quot;media/overlay.png&quot;&gt;
     \&lt;div id=&quot;chc&quot; class=&quot;chc hide&quot;&gt;
     	\&lt;img src=&quot;media/kickpet.png&quot;&gt;
     	\&lt;&lt;link &#39;&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
