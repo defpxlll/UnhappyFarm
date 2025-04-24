@@ -126,7 +126,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   position:absolute;
   top:0;
   left:0;
-  
+  z-index:0;
 }
 .overlay{
   width:100%;
@@ -134,6 +134,15 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   top:0;
   left:50%;
   translate:-50%;
+  z-index:1;
+}
+.overlay1{
+  width:100%;
+  position:absolute;
+  top:0;
+  left:50%;
+  translate:-50%;
+  z-index:5;
 }
 img{
   display:block;
@@ -148,7 +157,7 @@ img{
   top:50%;
   left:50%;
   translate: -50% -50%;
-  z-index:999;
+  z-index:6;
 }
 #title, #menu, #ui-bar-tray {
 }
@@ -178,6 +187,7 @@ img{
 }
 
 .dlg{
+  z-index:6;
   width:82%;
   height:21%;
   position:absolute;
@@ -204,12 +214,14 @@ img{
   top:0;
   left:0;
   cursor:default;
+  z-index:7;
 }
 .frm0{
   position:absolute;
   top:25%;
   left:0;
   translate:0 -25%;
+  z-index:0;
 }
 .sqr {
   width:75%;
@@ -217,6 +229,7 @@ img{
   top:50%;
   left:50%;
   translate:-50% -50%;
+  z-index:4;
 }
 .ok{
   width:27%;
@@ -224,12 +237,13 @@ img{
   position:absolute;
   left:68%;
   bottom:12%;
-  z-index:99;
+  z-index:6;
 }
 .gamebutton{
   width:19%;
   height:10%;
   position:absolute;
+  z-index:3;
 }
 #quit{
   top:7%;
@@ -245,6 +259,7 @@ img{
   top:50%;
   left:50%;
   translate:-50% -50%;
+  z-index:1;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">(function () {
     'use strict';
     // v1.1.0
@@ -436,7 +451,7 @@ img{
         \&lt;&lt;removeclass &quot;#chc&quot; &quot;hide&quot;&gt;&gt;
     \&lt;&lt;/link&gt;&gt;
     \&lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=media/overlay.png&gt;
-    \&lt;img style=&quot;z-index:98;&quot; id=&quot;overlay1&quot; class=&quot;overlay hide&quot; src=media/overlay.png&gt;
+    \&lt;img id=&quot;overlay1&quot; class=&quot;overlay1 hide&quot; src=media/overlay.png&gt;
     \&lt;div id=&quot;chc&quot; class=&quot;chc hide&quot;&gt;
     	\&lt;img src=media\makecoffee.png&gt;
         \&lt;&lt;link &#39;&lt;div class=&quot;ok&quot;&gt;&lt;/div&gt;&#39;&gt;&gt;
@@ -497,6 +512,7 @@ img{
    \&lt;&lt;/link&gt;&gt;
    \&lt;&lt;link &#39;&lt;img id=&quot;ec1&quot; class=&quot;sqr hide&quot; src=media/emptycup.png&gt;&#39;&gt;&gt;
    		&lt;&lt;addclass &quot;#ec1&quot; &quot;hide&quot;&gt;&gt;
+        &lt;&lt;addclass &quot;#overlay&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;removeclass &quot;#k2&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;addclass &quot;#k1&quot; &quot;hide&quot;&gt;&gt;
    \&lt;&lt;/link&gt;&gt;
@@ -677,6 +693,9 @@ img{
     \&lt;&lt;link &#39;&lt;img id=&quot;farm3&quot; class=&quot;frm hide&quot; src=&quot;media/farm3.png&quot;&gt;&#39;&gt;&gt;
     &lt;&lt;/link&gt;&gt;
     \&lt;img id=&quot;overlay&quot; class=&quot;overlay hide&quot; src=media/overlay.png&gt;
+    \&lt;div id=&quot;dlg&quot; class=&quot;dlg hide&quot;&gt;
+    	\&lt;img src=media/dialogbox.png&gt;
+   	\&lt;/div&gt;
     \&lt;&lt;link &#39;&lt;img style=&quot;cursor:pointer;&quot; id=&quot;tseeds&quot; class=&quot;actionbutton hide&quot; src=&quot;media/takeseeds.png&quot;&gt;&#39;&gt;&gt;
         &lt;&lt;addclass &quot;#tseeds&quot; &quot;hide&quot;&gt;&gt;
         &lt;&lt;removeclass &quot;#carrot&quot; &quot;hide&quot;&gt;&gt;
