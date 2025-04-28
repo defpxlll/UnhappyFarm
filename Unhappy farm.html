@@ -111,26 +111,28 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 }
 @font-face{
   font-family:determination;
-  src: url(fonts/determinationmonorusbylyajk.otf);
+  src: url(fonts/determinationmonorusbylyajk.otf);> 
   
 }
 .passage{
   position:relative;
+  counter-name: psg;
 }
 .hide{
   visibility:hidden;
 }
 .counter{
   position:absolute;
-  bottom:0%;
-  left:-15%;
-  container-name: cnt
+  bottom:0;
+  left:-10cqi;
+  container-name: cnt;
 }
 .cntrtext{
   font-family:determination;
   font-size:1.5cqi;
 }
 .wrap{
+  width:100%;
   max-width:100%;
   max-height:100%;
   aspect-ratio:1350 / 1080;
@@ -138,8 +140,11 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   margin:auto;
 }
 @media only screen and (max-height:820px){
-  .passage{
+  .wrap{
    	width:70%;
+  }
+  .counter{
+    left:0;
   }
 }
 .frm{
@@ -1168,7 +1173,7 @@ img{
 &lt;&lt;/link&gt;&gt;
 \&lt;a data-passage=&quot;noodleshall1&quot;&gt;&lt;div id=&quot;dlgiter1&quot; class=&quot;dlgiter hide&quot;&gt;&lt;/div&gt;&lt;/a&gt;
 \@@</tw-passagedata><tw-passagedata pid="15" name="evbedroom" tags="" position="1300,400" size="100,100">&lt;&lt;set $clicks +=1&gt;&gt;&lt;&lt;redo &#39;cntr&#39;&gt;&gt;
-\evbedroom</tw-passagedata><tw-passagedata pid="16" name="PassageFooter" tags="" position="100,600" size="100,100">@@#counters;.counter;
+\evbedroom</tw-passagedata><tw-passagedata pid="16" name="PassageHeader" tags="" position="100,600" size="100,100">@@#counters;.counter;
  &lt;&lt;do tag &#39;cntr&#39;&gt;&gt;&lt;span class=&quot;cntrtext&quot;&gt;days: $days
  clicks: $clicks&lt;/span&gt;&lt;&lt;/do&gt;&gt;
 @@</tw-passagedata></tw-storydata>
